@@ -2,7 +2,7 @@ package JSON;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XMLRootElement;
+@XmlRootElement;
 public class MessageJSON {
 	private String message;
 	public MessageJSON() {
