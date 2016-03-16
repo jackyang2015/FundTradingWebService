@@ -10,9 +10,10 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "FUND_PRICE_HISTORY")
-//@IdClass(FundPriceHistoryPrimaryKeys.class)
+@IdClass(FundPriceHistoryPrimaryKeys.class)
 public class FundPriceHistoryBean implements Serializable {
-    @Id
+	private static final long serialVersionUID = 1L;
+	@Id
     @Column(name = "FUND_ID")
     private int fundId;
     @Id
